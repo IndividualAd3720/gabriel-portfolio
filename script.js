@@ -20,3 +20,8 @@ form?.addEventListener('submit', (e)=>{
   const body = encodeURIComponent(data.get('message') + '\n\n— ' + data.get('name') + ' (' + data.get('email') + ')');
   window.location.href = `mailto:${'gabrielmagan10@gmail.com'}?subject=${subject}&body=${body}`;
 });
+
+AOS.init({
+  duration: 800,
+  once: true,
+});

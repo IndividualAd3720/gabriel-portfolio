@@ -4,21 +4,51 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
+
   <title>Gabriel Magan — Portfolio</title>
+
   <meta name="description" content="Portfolio of Gabriel Luis A. Magan — Data Analytics • Automation • Web Development." />
   <meta property="og:title" content="Gabriel Magan — Portfolio" />
   <meta property="og:description" content="Data Analytics • Automation • Web Development" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fix favicon path -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- AOS Animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JS -->
   <script defer src="script.js"></script>
+
+  <!-- Schema -->
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Person", "name": "Gabriel Luis A. Magan", "jobTitle": "Data Analyst / Automation / Web Developer", "email": "mailto:gabrielmagan10@gmail.com", "telephone": "(+63) 966 775 7054", "url": "https://gabmaganunlimited.unaux.com/", "sameAs": ["https://github.com/IndividualAd3720", "https://www.linkedin.com/in/gabriel-m-457a3b1b5/"], "address": {"@type": "PostalAddress", "addressLocality": "Dasmari\u00f1as City, Philippines"}}
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gabriel Luis A. Magan",
+    "jobTitle": "Data Analyst / Automation / Web Developer",
+    "email": "mailto:gabrielmagan10@gmail.com",
+    "telephone": "(+63) 966 775 7054",
+    "url": "https://individualad3720.github.io/gabriel-portfolio/",
+    "sameAs": [
+      "https://github.com/IndividualAd3720",
+      "https://www.linkedin.com/in/gabriel-m-457a3b1b5/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dasmariñas City, Philippines"
+    }
+  }
   </script>
+
 </head>
 <body>
+
 <header class="site-header">
   <a class="logo" href="index.html"><span class="dot"></span> Gabriel</a>
   <nav class="nav">
@@ -29,64 +59,89 @@
   </nav>
   <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
 </header>
+
+
 <main class="container">
+
+<!-- HERO SECTION -->
 <section class="hero" data-aos="fade-up">
   <div class="hero-text">
     <h1>Hi, I'm Gabriel.</h1>
     <h2 class="tagline">Data Analytics • Automation • Web Development</h2>
+
     <p>I help teams turn messy data into clear decisions, automate repetitive workflows, and ship clean, fast websites.</p>
+
     <div class="cta-row">
-      <a class="btn primary" href="/portfolio.html">See my work</a>
-      <a class="btn ghost" href="/resume.html">View résumé</a>
+      <a class="btn primary" href="portfolio.html">See my work</a>
+      <a class="btn ghost" href="resume.html">View résumé</a>
     </div>
+
     <ul class="quick-facts">
       <li>📍 Dasmariñas City, Philippines</li>
       <li>📞 (+63) 966 775 7054</li>
       <li>📧 gabrielmagan10@gmail.com</li>
     </ul>
   </div>
-  <div class="hero-art">
-    <img src="/assets/avatar.svg" alt="Avatar illustration" />
+
+  <div class="hero-art" data-aos="zoom-in" data-aos-delay="200">
+    <img src="assets/avatar.svg" alt="Avatar illustration" />
   </div>
 </section>
 
+
+
+<!-- WHAT I DO -->
 <section class="pillars">
   <h3>What I do</h3>
   <div class="grid three">
-    <article class="card">
+
+    <article class="card" data-aos="fade-up" data-aos-delay="100">
       <h4>Data Analytics</h4>
-      <p>Dashboards & insights with Excel, SQL, Power BI, and R — so stakeholders get answers, not spreadsheets.</p>
+      <p>Dashboards & insights using Excel, SQL, Power BI, and R — so stakeholders get answers, not spreadsheets.</p>
     </article>
-    <article class="card">
+
+    <article class="card" data-aos="fade-up" data-aos-delay="200">
       <h4>Automation</h4>
-      <p>Glue apps with Google Workspace, Apps Script, n8n, Zapier, and APIs to remove manual busywork.</p>
+      <p>Glue apps using Google Workspace, Apps Script, n8n, Zapier, and APIs to remove manual busywork.</p>
     </article>
-    <article class="card">
+
+    <article class="card" data-aos="fade-up" data-aos-delay="300">
       <h4>Web Development</h4>
       <p>Responsive sites with HTML/CSS/JS. Performant, accessible, and easy to maintain.</p>
     </article>
+
   </div>
 </section>
 
+
+
+<!-- FEATURED PROJECTS -->
 <section class="highlight">
   <h3>Featured Projects</h3>
+
   <div class="grid three">
-    <a class="project" href="/portfolio.html#inventory-app">
+
+    <a class="project" href="portfolio.html#inventory-app" data-aos="zoom-in">
       <h4>Inventory Management Web App</h4>
       <p>Firebase + Replit prototype to track stock and SKU movement.</p>
     </a>
-    <a class="project" href="/portfolio.html#ai-agent">
+
+    <a class="project" href="portfolio.html#ai-agent" data-aos="zoom-in" data-aos-delay="150">
       <h4>AI Agent for Support</h4>
       <p>Classifies tickets and suggests replies via Jotform and automations.</p>
     </a>
-    <a class="project" href="/portfolio.html#ops-dash">
+
+    <a class="project" href="portfolio.html#ops-dash" data-aos="zoom-in" data-aos-delay="300">
       <h4>Operations Dashboard</h4>
       <p>KPI view across orders, SLAs, and after-sales in Sheets/BI.</p>
     </a>
+
   </div>
 </section>
 
+
 </main>
+
 <footer class="site-footer">
   <p>© 2025 Gabriel Luis A. Magan. Built with ❤️ — Dark mode first.</p>
   <div class="socials">
@@ -95,5 +150,14 @@
     <a href="mailto:gabrielmagan10@gmail.com">Email</a>
   </div>
 </footer>
+
+<!-- Initialize AOS -->
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 </body>
 </html>

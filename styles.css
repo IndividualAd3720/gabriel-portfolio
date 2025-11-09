@@ -92,3 +92,10 @@ main, header, footer {
   z-index: 10;
 }
 
+.hero-art img {
+  transition: transform 0.3s ease;
+}
+
+.hero-art img:hover {
+  transform: scale(1.05);
+}

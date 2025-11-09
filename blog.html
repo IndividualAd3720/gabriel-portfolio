@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Magan — Blog</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="dot"></span> Gabriel</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="theme-toggle">🌓</button>
+</header>
+
+<main class="container">
+
+<section class="page-title" data-aos="fade-up">
+  <h1>Blog</h1>
+  <p>Thoughts on Data Analytics, Automation, and Web Development.</p>
+</section>
+
+<section class="grid three">
+
+  <a class="card" href="post-automation.html" data-aos="fade-up" data-aos-delay="100">
+    <h3>How I Automated a Full After-Sales Workflow</h3>
+    <p class="muted">Turning Google Forms → Sheets → Gmail into a full automation pipeline.</p>
+    <p class="small muted">Feb 2025</p>
+  </a>
+
+  <a class="card" href="post-inventory-app.html" data-aos="fade-up" data-aos-delay="200">
+    <h3>Building My Inventory Management App</h3>
+    <p class="muted">A breakdown of the Firebase + Replit real-time system I built.</p>
+    <p class="small muted">Feb 2025</p>
+  </a>
+
+  <a class="card" href="post-data-analytics-learning.html" data-aos="fade-up" data-aos-delay="300">
+    <h3>How I Learned Data Analytics</h3>
+    <p class="muted">My journey from Excel to SQL to Power BI to R.</p>
+    <p class="small muted">Jan 2025</p>
+  </a>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Gabriel Luis A. Magan. Built with ❤️ — Dark mode first.</p>
+</footer>
+
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>

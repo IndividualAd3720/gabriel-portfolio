@@ -4,69 +4,114 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
-  <title>Gabriel Magan — Portfolio</title>
-  <meta name="description" content="Portfolio of Gabriel Luis A. Magan — Data Analytics • Automation • Web Development." />
-  <meta property="og:title" content="Gabriel Magan — Portfolio" />
+
+  <title>Gabriel Magan — Contact</title>
+
+  <meta name="description" content="Contact page of Gabriel Luis A. Magan — Data Analytics • Automation • Web Development." />
+  <meta property="og:title" content="Gabriel Magan — Contact" />
   <meta property="og:description" content="Data Analytics • Automation • Web Development" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- FIX favicon path -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- AOS Animation Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JS -->
   <script defer src="script.js"></script>
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Person", "name": "Gabriel Luis A. Magan", "jobTitle": "Data Analyst / Automation / Web Developer", "email": "mailto:gabrielmagan10@gmail.com", "telephone": "(+63) 966 775 7054", "url": "https://gabmaganunlimited.unaux.com/", "sameAs": ["https://github.com/IndividualAd3720", "https://www.linkedin.com/in/gabriel-m-457a3b1b5/"], "address": {"@type": "PostalAddress", "addressLocality": "Dasmari\u00f1as City, Philippines"}}
-  </script>
 </head>
+
+
 <body>
+
 <header class="site-header">
   <a class="logo" href="index.html"><span class="dot"></span> Gabriel</a>
+
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
+
   <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
 </header>
+
+
 <main class="container">
-<section class="page-title">
+
+<!-- PAGE TITLE -->
+<section class="page-title" data-aos="fade-up">
   <h1>Contact</h1>
   <p>Let’s build something great. I usually respond within 24–48 hours.</p>
 </section>
 
+
+<!-- CONTACT SECTION -->
 <section class="contact-grid">
-  <form class="card" id="contact-form">
+
+  <!-- FORM -->
+  <form class="card" id="contact-form" data-aos="fade-right" data-aos-delay="100">
     <label>Name
       <input type="text" name="name" required />
     </label>
+
     <label>Email
       <input type="email" name="email" required />
     </label>
+
     <label>Message
       <textarea name="message" rows="6" required></textarea>
     </label>
+
     <button type="submit" class="btn primary">Send</button>
-    <p class="muted small">This static form will open your email client. For hosted forms, use Formspree or Google Forms.</p>
+
+    <p class="muted small">
+      This static form will open your email client.  
+      For backend form handling, use Formspree or Google Forms.
+    </p>
   </form>
-  <aside class="card">
+
+
+  <!-- SIDE CONTACT LINKS -->
+  <aside class="card" data-aos="fade-left" data-aos-delay="200">
     <h3>Other ways</h3>
+
     <ul class="contact-list">
       <li>📧 <a href="mailto:gabrielmagan10@gmail.com">gabrielmagan10@gmail.com</a></li>
       <li>🐙 <a href="https://github.com/IndividualAd3720" target="_blank" rel="noopener">GitHub</a></li>
       <li>🔗 <a href="https://www.linkedin.com/in/gabriel-m-457a3b1b5/" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </aside>
+
 </section>
 
 </main>
+
+
 <footer class="site-footer">
   <p>© 2025 Gabriel Luis A. Magan. Built with ❤️ — Dark mode first.</p>
+
   <div class="socials">
     <a href="https://github.com/IndividualAd3720" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.linkedin.com/in/gabriel-m-457a3b1b5/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="mailto:gabrielmagan10@gmail.com">Email</a>
   </div>
 </footer>
+
+
+<!-- INIT AOS -->
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 </body>
 </html>

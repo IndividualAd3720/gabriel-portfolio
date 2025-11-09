@@ -100,24 +100,24 @@ window.addEventListener('mousemove', e => {
   avatar.style.transform = `translate(${x}px, ${y}px)`;
 });
 
-// Floating subtle particles
+// ---- PARTICLE BACKGROUND (Improved) ----
 function createParticles() {
-  const container = document.getElementById('particles');
-  const count = 50; // Increase for more particles
+  const container = document.getElementById("particles");
+  const count = 70; // Increase for more particles
 
   for (let i = 0; i < count; i++) {
-    const p = document.createElement('div');
-    p.classList.add('particle');
+    const p = document.createElement("div");
+    p.classList.add("particle");
 
-    const size = Math.random() * 4 + 2; 
-    p.style.width = size + 'px';
-    p.style.height = size + 'px';
+    const size = Math.random() * 12 + 6;  // 6–18px glowing bubbles
+    p.style.width = size + "px";
+    p.style.height = size + "px";
 
-    p.style.left = Math.random() * window.innerWidth + 'px';
-    p.style.top = Math.random() * window.innerHeight + 'px';
+    p.style.left = Math.random() * window.innerWidth + "px";
+    p.style.top = Math.random() * window.innerHeight + "px";
 
-    p.style.animationDuration = 8 + Math.random() * 10 + 's';
-    p.style.animationDelay = Math.random() * 5 + 's';
+    p.style.animationDuration = 10 + Math.random() * 14 + "s";
+    p.style.animationDelay = Math.random() * 6 + "s";
 
     container.appendChild(p);
   }

@@ -92,3 +92,10 @@ setTimeout(() => {
   document.body.classList.add('fade-in');
 }, 50);
 
+const avatar = document.querySelector('.hero-art img');
+window.addEventListener('mousemove', e => {
+  if (!avatar) return;
+  const x = (window.innerWidth - e.pageX) / 120;
+  const y = (window.innerHeight - e.pageY) / 120;
+  avatar.style.transform = `translate(${x}px, ${y}px)`;
+});

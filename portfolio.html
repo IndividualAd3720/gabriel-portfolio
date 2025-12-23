@@ -12,20 +12,15 @@
   <meta property="og:description" content="Data Analytics • Automation • Web Development" />
   <meta property="og:type" content="website" />
 
-  <!-- FIXED favicon path -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-
-  <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- AOS Animation Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- JS -->
   <script defer src="script.js"></script>
-
 </head>
+
 <body>
 
 <header class="site-header">
@@ -33,7 +28,7 @@
 
   <nav class="nav">
     <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
     <a href="resume.html">Resume</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
@@ -42,75 +37,68 @@
   <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
 </header>
 
-
 <main class="container">
 
-<!-- PAGE TITLE -->
-<section class="page-title" data-aos="fade-up">
-  <h1>Portfolio</h1>
-  <p>Data Analytics • Automation • Web Development</p>
-</section>
+  <!-- PAGE TITLE -->
+  <section class="page-title" data-aos="fade-up">
+    <h1>Portfolio</h1>
+    <p>Selected work — internal systems, automation, and operations tools.</p>
+  </section>
 
+  <!-- PROJECT GRID -->
+  <section class="project-grid" data-aos="fade-up" data-aos-delay="100">
 
-<!-- PROJECT 1 -->
-<section id="inventory-app" class="project-detail" data-aos="fade-up" data-aos-delay="100">
-  <h2>Inventory Management Web App</h2>
+    <!-- PROJECT 1 -->
+    <a href="post-inventory-app.html" class="project-card">
+      <div class="project-image">
+        <img src="assets/gamachan-preview.png" alt="Gamachan Inventory System">
+      </div>
+      <div class="project-info">
+        <h3>Gamachan Inventory System</h3>
+        <p>Zero-cost, real-time inventory system for a multi-branch retail operation.</p>
+        <div class="tags">
+          <span class="tag">Inventory</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Firebase</span>
+        </div>
+      </div>
+    </a>
 
-  <ul class="meta">
-    <li><strong>Stack:</strong> Firebase, Replit, JavaScript</li>
-    <li><strong>Role:</strong> Solo Developer</li>
-  </ul>
+    <!-- PROJECT 2 -->
+    <a href="post-automation.html" class="project-card">
+      <div class="project-image">
+        <img src="assets/oms-preview.png" alt="Order Management Automation">
+      </div>
+      <div class="project-info">
+        <h3>Order Management Automation</h3>
+        <p>End-to-end OMS built using Google Forms, Sheets, and n8n.</p>
+        <div class="tags">
+          <span class="tag">Automation</span>
+          <span class="tag">Ops</span>
+          <span class="tag">No-Code</span>
+        </div>
+      </div>
+    </a>
 
-  <p>
-    This custom-built inventory system tracks stock levels, supplier orders,
-    critical stockouts, and SKU movement in real-time — eliminating spreadsheet chaos.
-    Designed to help operations teams make decisions faster.
-  </p>
+    <!-- PROJECT 3 -->
+    <a href="post-ops-dashboard.html" class="project-card">
+      <div class="project-image">
+        <img src="assets/ops-dashboard.png" alt="Operations Dashboard">
+      </div>
+      <div class="project-info">
+        <h3>Operations Dashboard</h3>
+        <p>Centralized analytics for orders, fulfillment, inventory, and SLA metrics.</p>
+        <div class="tags">
+          <span class="tag">Analytics</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Sheets</span>
+        </div>
+      </div>
+    </a>
 
-  <!-- Placeholder for image -->
-  <!-- <img src="assets/inventory.png" class="project-img" alt="Inventory App Screenshot"> -->
-</section>
-
-
-<!-- PROJECT 2 -->
-<section id="ai-agent" class="project-detail" data-aos="fade-up" data-aos-delay="200">
-  <h2>AI Agent for Customer Support</h2>
-
-  <ul class="meta">
-    <li><strong>Stack:</strong> Jotform, Google Apps Script, Automations</li>
-    <li><strong>Role:</strong> Designer & Implementer</li>
-  </ul>
-
-  <p>
-    An automated support workflow that classifies tickets, drafts responses,
-    routes customers, and triggers notifications — reducing manual work
-    and improving SLA response times.
-  </p>
-
-  <!-- <img src="assets/ai-agent.png" class="project-img" alt="AI Agent Screenshot"> -->
-</section>
-
-
-<!-- PROJECT 3 -->
-<section id="ops-dash" class="project-detail" data-aos="fade-up" data-aos-delay="300">
-  <h2>Operations Dashboard</h2>
-
-  <ul class="meta">
-    <li><strong>Stack:</strong> Google Sheets, Power BI</li>
-    <li><strong>Role:</strong> Analyst</li>
-  </ul>
-
-  <p>
-    Designed a centralized dashboard for orders, fulfillment performance,
-    inventory movement, after-sales, and SLA metrics. Improves visibility across all teams.
-  </p>
-
-  <!-- <img src="assets/ops-dash.png" class="project-img" alt="Ops Dashboard Screenshot"> -->
-</section>
-
+  </section>
 
 </main>
-
 
 <footer class="site-footer">
   <p>© 2025 Gabriel Luis A. Magan. Built with ❤️ — Dark mode first.</p>
@@ -121,8 +109,6 @@
   </div>
 </footer>
 
-
-<!-- Initialize AOS -->
 <script>
   AOS.init({
     duration: 800,

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building an Internal Knowledge Base — Gabriel Magan</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="dot"></span> Gabriel</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html" class="active">Blog</a>
+  </nav>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+</header>
+
+<main class="container">
+
+<section class="project-detail" data-aos="fade-up">
+  <h1>Building an Internal Knowledge Base for Operations</h1>
+  <p class="muted">Case Study · Feb 2025</p>
+
+  <p>
+    As operations scaled at Filcon Ventures, one recurring issue kept slowing teams down:
+    <strong>knowledge was scattered</strong>. Critical processes lived in chat threads,
+    personal notes, or someone’s memory. Onboarding took too long, and daily BAUs
+    were interrupted by repeated questions.
+  </p>
+
+  <p>
+    To solve this, I built a centralized <strong>internal knowledge base</strong> using
+    WordPress and free hosting (profreehost) — designed to be a single source of truth
+    for operations, customer service, sales, and support teams.
+  </p>
+
+  <h2 data-aos="fade-up">The Problem</h2>
+
+  <ul>
+    <li>No single place for operational documentation</li>
+    <li>New hires repeatedly asking the same questions</li>
+    <li>Tool links, logins, and workflows scattered across chats</li>
+    <li>High dependency on senior staff for basic BAUs</li>
+  </ul>
+
+  <p>
+    These issues didn’t just waste time — they created operational risk.
+    Knowledge loss meant mistakes, delays, and inconsistent execution.
+  </p>
+
+  <h2 data-aos="fade-up">The Solution</h2>
+
+  <p>
+    I created a structured internal help center that acts as a
+    <strong>one-stop operations hub</strong>.
+    The goal was simple: if someone asked “How do I do this?”, the answer should already exist.
+  </p>
+
+  <ul>
+    <li>Centralized documentation by department</li>
+    <li>Step-by-step BAU guides</li>
+    <li>Quick access to internal tools and links</li>
+    <li>Searchable knowledge base interface</li>
+  </ul>
+
+  <h2 data-aos="fade-up">Tech Stack</h2>
+
+  <ul>
+    <li>🧱 WordPress (content management)</li>
+    <li>🌐 Free hosting via profreehost</li>
+    <li>🎨 Custom theme styling for clarity and usability</li>
+  </ul>
+
+  <h2 data-aos="fade-up">Key Features</h2>
+
+  <ul>
+    <li>Department-based categories (Ops, CS, Sales, Finance, HR)</li>
+    <li>BAU playbooks and turnover documents</li>
+    <li>Customer service and fulfillment guides</li>
+    <li>Internal tools directory (ClickUp, Gmail, Shopify, etc.)</li>
+    <li>Search bar for fast lookup</li>
+  </ul>
+
+  <h2 data-aos="fade-up">Impact</h2>
+
+  <p>
+    The knowledge base significantly reduced repetitive questions and
+    improved onboarding speed. Team members could independently
+    resolve routine tasks without waiting for guidance.
+  </p>
+
+  <ul>
+    <li>Faster onboarding for new hires</li>
+    <li>Reduced operational interruptions</li>
+    <li>Improved consistency in BAU execution</li>
+    <li>Lower dependency on key individuals</li>
+  </ul>
+
+  <h2 data-aos="fade-up">What I Learned</h2>
+
+  <p>
+    This project reinforced that <strong>systems aren’t always code-heavy</strong>.
+    Well-structured information can be just as powerful as automation.
+    Building internal tools is about reducing friction — not showing off technology.
+  </p>
+
+  <p>
+    If I were to iterate further, I’d explore:
+  </p>
+
+  <ul>
+    <li>Role-based access for sensitive documentation</li>
+    <li>Version control for process updates</li>
+    <li>Analytics to track most-viewed articles</li>
+  </ul>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Gabriel Luis A. Magan. Built with ❤️ — Dark mode first.</p>
+</footer>
+
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>
